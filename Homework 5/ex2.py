@@ -13,7 +13,7 @@
 # Введите число: 123
 # Количество четных и нечетных цифр в числе равно: (1, 2)
 
-def Rec(number, even = 0, odd = 0):
+def Rec(number, even, odd):
     if not number:
         return even, odd
     elif int(number) % 10 % 2 == 1:
@@ -24,8 +24,8 @@ def Rec(number, even = 0, odd = 0):
 
 
 def main():
-    n = input('Введите число: ')
-    print(f'Количество четных и нечетных цифр в числе равно: {Rec(n)}')
+    n = (input('Введите число: '))
+    print(f'Количество четных и нечетных цифр в числе равно: {Rec(n, 0, 0)}')
 
 if __name__ == '__main__':
     main()
