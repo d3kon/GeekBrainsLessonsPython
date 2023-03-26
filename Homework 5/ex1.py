@@ -1,4 +1,3 @@
-# -- coding: cp1251 --
 
 def calc():
 	operation = input('Введите операцию *, +, -, /: ')
@@ -31,8 +30,6 @@ def calc():
 				print(" Неверная операция")
 				return calc()
 
-def main():
-	calc()
 
 if __name__ == '__main__':
-	main()
+	calc()
