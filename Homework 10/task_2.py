@@ -12,14 +12,14 @@
 """
 
 
-def Byte(var):
+def byte_count(var):
     for line in var:
-        print('Тип переменной: {}'.format(type(line)), end=' : ')
-        print('Содержание переменной - {}'.format(line), end=' : ')
-        print('Длина строки: {}'.format(len(line)))
+        time_count = bytes(line, 'utf-8')
+        print('Тип переменной: {}'.format(type(time_count)), end=' : ')
+        print('Содержание переменной - {}'.format(time_count), end=' : ')
+        print('Длина строки: {}'.format(len(time_count)))
 
 
-list_word_in_byte = [b'class', b'function', b'method']
+list_word_in_byte = ['class', 'function', 'method']
 if __name__ == '__main__':
-    Byte(list_word_in_byte)
-
+    byte_count(list_word_in_byte)

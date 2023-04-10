@@ -13,7 +13,7 @@
 
 def byte_or_not_byte(list_word):
     for i in list_word:
-        s = i.encode('utf-8')
+        s = bytes(i, 'utf-8')  # вот тут у меня был encode, взял другую функцию
         try:
             if len(s) != len(i):
                 raise ValueError
